@@ -1,0 +1,103 @@
+<div *ngIf="!Admin">
+  <app-autenticazione></app-autenticazione>
+</div>
+
+<div class="container" *ngIf="Admin">
+  <div class="row">
+    <div class="col-6 m-0">
+      <form [formGroup]="dato_form">
+        <div class="row m-0">
+          <div class="col">
+            <input
+              type="text"
+              placeholder="titolo"
+              #titolo
+              formControlName="titolo"
+              class="form-control"
+              [required]="true"
+              [(ngModel)]="titoloPreview"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              placeholder="chiavi"
+              #chiavi
+              formControlName="chiavi"
+              class="form-control"
+              required
+              [(ngModel)]="chiaviPreview"
+            />
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="col">
+            <textarea
+              type="text"
+              placeholder="descrizione "
+              #descrizione
+              formControlName="descrizione"
+              class="form-control"
+              required
+              [(ngModel)]="descrizionePreview"
+            >
+            </textarea>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="col-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="url "
+              #url
+              formControlName="url"
+              class="form-control"
+              required
+              [(ngModel)]="urlPreview"
+            />
+          </div>
+        </div>
+      
+        <button
+          class="btn btn-primary my-3"
+          type="submit"
+          (click)="aggiungi(titolo.value, chiavi.value, descrizione.value, url.value)"
+          [disabled]="dato_form.invalid"
+        >
+          Invia
+        </button>
+      </form>
+    </div>
+    <div class="col-6 m-0">
+      <div class="row d-flex flex-column justify-content-center">
+        <div class="col-3 mt-0 ms-0">
+          <button class="btn btn-outline-secondary mt-0 ms-0" title="attiva/disattiva preview" (click)="onPreviewSwitch()">
+            Preview
+          </button>
+        </div>
+        <div class="col-12 column-preview">
+          
+            <div class="row data-row" *ngIf="previewActive">
+              <div class="col titolo">
+                {{ titoloPreview }}
+                
+              </div>
+              <div class="col m-0">
+                <p class="text-area">{{ descrizionePreview }}</p>
+              </div>
+              <div class="col">
+                <a href="{{ urlPreview }}">{{ urlPreview }}</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  
+  
+</div>
+

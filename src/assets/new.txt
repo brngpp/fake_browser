@@ -1,0 +1,30 @@
+•	Autenticazione(login-registrazione): Giuseppe 
+	email
+	password
+	login 
+	registrati
+
+•	ricerca (solo barra ricerca):
+Navbar: (componente a se) Jerome
+		menu utente:
+			Admin:
+				Aggiungi
+				Elimina
+				Logout
+			Guest:
+				Logout
+	barra ricerca 
+	bottone ricerca 
+•	risultati:
+		Navbar
+			Barra ricerca
+			Lista risultati 
+			Elemento per proseguire in altre pagine
+
+•	N pagine per altri risultati 
+	Uguale a seconda pagina 
+
+Pagina gestionale
+
+
+

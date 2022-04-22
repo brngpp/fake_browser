@@ -1,0 +1,42 @@
+.data-row {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.467);
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+
+}
+
+.data-row:hover {
+  
+  /* width: calc(100%); */
+  /* height: calc(100%); */
+  background-color: rgb(255, 255, 255);
+  
+  
+  transition: 0.3s;
+  text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+
+}
+
+a {
+    color: #e91e63;
+    text-decoration: underline;
+    text-align: left;
+}
+.titolo {
+  color: blue;
+  font-size: 22px;
+  font-family: Georgia;
+}
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    text-align: left;
+}
+
+button{
+  float:right;
+}

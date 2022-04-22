@@ -1,0 +1,18 @@
+<div class="row data-row">
+  <div class="col titolo">
+    {{ dato.titolo }}
+    <button
+      class="btn btn-outline-secondary"
+      *ngIf="Admin == true"
+      (click)="delete()"
+    >
+      <i class="fa-solid fa-trash-can"></i>
+    </button>
+  </div>
+  <div class="col">
+    <p>{{ dato.descrizione }}</p>
+  </div>
+  <div class="col">
+    <a href="{{ dato.url }}">{{ dato.url }}</a>
+  </div>
+</div>

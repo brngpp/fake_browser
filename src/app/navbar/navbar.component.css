@@ -1,0 +1,47 @@
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon {
+  color: #4f4f4f;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: end;
+}
+/* .fa-circle-user:before,
+.fa-user-circle:before {
+  content: "\f2bd";
+  color: black;
+} */
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  color: black;
+}
+
+.fa-user-circle {
+  color: black;
+}
+
+.fa-user-circle:hover {
+  color: royalblue;
+}

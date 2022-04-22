@@ -1,0 +1,42 @@
+input {
+  border: 2px solid black;
+  height: 100%;
+  width: 100%;
+  margin-top: 2px;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+button {
+  width: 25%;
+  height: 100%;
+}
+.email {
+  align-content: flex-end;
+  height: 100;
+  width: 48px;
+}
+
+.auth-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.fa-users {
+  font-size: 40px;
+}
+
+.fa-key {
+  font-size: 40px;
+}
+
+.fa-user {
+  font-size: 300px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+}

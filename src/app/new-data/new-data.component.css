@@ -1,0 +1,33 @@
+div {
+  margin: 30px;
+}
+
+.data-row {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.775);
+  padding: 0;
+  border: 1px solid rgb(93, 93, 93);
+  border-radius: 10px;
+  margin: 0;
+}
+
+a {
+  color: #e91e63;
+  text-decoration: underline;
+  text-align: left;
+}
+.titolo {
+  color: blue;
+  font-size: 22px;
+  font-family: Georgia;
+}
+
+.column-preview {
+  text-align: left;
+  margin: 0;
+}
+
+.text-area {
+  width: 100%;
+}
